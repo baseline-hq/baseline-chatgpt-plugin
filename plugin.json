@@ -1,0 +1,31 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "baseline",
+  "version": "0.1.0",
+  "description": "Log meals, review your week and plan workouts in Baseline, your personal health log.",
+  "author": { "name": "Chaitanya Bhagwat", "url": "https://baseline.chaitanyabhagwat.com" },
+  "homepage": "https://baseline.chaitanyabhagwat.com",
+  "license": "MIT",
+  "extensions": {
+    "com.openai": {
+      "apps": "./.app.json",
+      "onboardingSkill": "./skills/baseline-setup/SKILL.md",
+      "interface": {
+        "displayName": "Baseline",
+        "shortDescription": "Your personal health log",
+        "longDescription": "Log meals, review your week and plan workouts in Baseline from a conversation.",
+        "developerName": "Chaitanya Bhagwat",
+        "category": "Health & Fitness",
+        "capabilities": ["Read", "Write"],
+        "websiteURL": "https://baseline.chaitanyabhagwat.com",
+        "defaultPrompt": [
+          "Log my breakfast in Baseline: two eggs and a slice of toast.",
+          "How did my week go in Baseline?"
+        ],
+        "brandColor": "#98C9A3",
+        "composerIcon": "./assets/icon.png",
+        "logo": "./assets/logo.png"
+      }
+    }
+  }
+}
