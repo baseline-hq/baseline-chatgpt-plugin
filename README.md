@@ -11,3 +11,7 @@ Baseline is a personal health log for meals, workouts, goals and Apple Health su
 ## Data
 
 Requests go to your Baseline account through https://baseline.chaitanyabhagwat.com/api/mcp, signed in with OAuth. The plugin reads and writes your food log, routines, goals and health summaries there and stores nothing itself.
+
+## Interactive app (planned)
+
+The next step is an MCP App served by the Baseline connector: a "Baseline Today" view with macros left and today's meals. It opens inline, in the side panel, or from the app list. See [docs/mcp-apps-plan.md](docs/mcp-apps-plan.md). The plan is shared with the other Baseline plugin repo.
